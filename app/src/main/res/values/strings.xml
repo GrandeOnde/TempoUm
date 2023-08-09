@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="custo">Custo Requerido</string>
+    <string name="numero">Dinheiro Dado Aqui</string>
+    <string name="vinte_cento">Incrivel Obstantemente (20%)</string>
+    <string name="dezoito_cento">Bem Bacana (18%)</string>
+    <string name="quinze_cento">É (15%)</string>
+    <string name="calc">Calcular-emos</string>
+    <string name="pedido">Arredondar Pedido?</string>
 </resources>

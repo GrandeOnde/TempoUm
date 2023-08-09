@@ -9,7 +9,7 @@
 
     <EditText
         android:inputType="numberDecimal"
-        android:hint="Custo Requerido"
+        android:hint="@string/numero"
         android:id="@+id/ComponenteEssencia"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:id="@+id/ComponenteNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Como foi o serviço?"
+        android:text="@string/custo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ComponenteEssencia"/>
 
@@ -36,21 +36,43 @@
             android:id="@+id/VinteCento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Incrível (20%)" />
+            android:text="@string/vinte_cento" />
 
         <RadioButton
             android:id="@+id/option_eighteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Good (18%)" />
+            android:text="@string/dezoito_cento" />
 
         <RadioButton
             android:id="@+id/option_fifteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Okay (15%)" />
+            android:text="@string/quinze_cento" />
 
     </RadioGroup>
+
+    <Switch
+        android:id="@+id/Barra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/pedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ComponenteSelect"
+        app:layout_constraintTop_toBottomOf="@id/ComponenteSelect"/>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calc"
+        app:layout_constraintTop_toBottomOf="@id/Barra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
 
 
 
