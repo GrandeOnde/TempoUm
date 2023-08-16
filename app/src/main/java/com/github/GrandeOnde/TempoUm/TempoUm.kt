@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
         val marcadoAcima = binding.Barra.isChecked
         if (marcadoAcima) {
             gorjeta = ceil(gorjeta)
-
         }
+        val formattedTip = NumberFormat.getCurrencyInstance().format(gorjeta)
+        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
     }
 }
